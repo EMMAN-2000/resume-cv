@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="cv.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CV.css"/>
+    <title>myCV</title>
+</head>
+<style>
+   img{
+      margin-top: 10px;
+      margin-right: 200px;
+   }
+   Body{
+background: fixed;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 600px;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab button:hover{
+  background-color: rgb(223, 96, 12);
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 80%;
+  border-left: none;
+  height: 600px;
+  display: none;
+  text-align: center;
+  background-color: antiquewhite;
+  
+}
+image{
+  width: 20px;
+  height: 10px;
+}
+</style>
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="JavaScript:selectTab('tab1');">
+       Personal Background
+    </button>
+    <button class="tablinks" onclick="JavaScript:selectTab('tab2');">
+       Skills
+    </button>
+    <button class="tablinks" onclick="JavaScript:selectTab('tab3');">
+       Job Experiences
+    </button>
+    <button class="tablinks" onclick="JavaScript:selectTab('tab4');">
+      Trainings and Seminars Attendend
+   </button>
+   <button class="tablinks" onclick="JavaScript:selectTab('tab5');">
+      Orgnanization Involved
+   </button>
+    </div>
+    <div id="tab1" class="tabcontent">
+      <img src="my profile cv.jpg" alt="mannix" style="width:500px;height:500px;">
+     
+      <h3></h3>
+      
+       <h3></h3>
+       <p></p>
+    </div>
+    <div id="tab2" class="tabcontent">
+      
+       <h3></h3>
+       <p></p>
+    </div>
+    <div id="tab3" class="tabcontent">
+       
+    </div>
+    <div id="tab4" class="tabcontent">
+      
+   </div>
+   <div id="tab5" class="tabcontent">
+   
+   </div>
+  <script>
+   function selectTab(tabIndex) {
+  // Declare all variables
+  var i, tabcontent;
+ 
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+     tabcontent[i].style.display = "none";
+  }
+  //Show the Selected Tab
+  document.getElementById(tabIndex).style.display = "block";
+}
+
+  </script>
+</body>
+</html>
